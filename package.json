@@ -14,6 +14,7 @@
 		"@fontsource/roboto": "^4.5.8",
 		"apexcharts": "^3.27.3",
 		"classnames": "2.3.1",
+		"framer-motion": "^4.1.17",
 		"match-sorter": "6.3.0",
 		"moment": "2.29.1",
 		"node-sass": "7.0.1",
@@ -42,12 +43,9 @@
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject",
-		"deploy": "npm run build",
-		"lint:check": "eslint . --ext=js,jsx;  exit 0",
-		"lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",
-		"install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+		"eject": "react-scripts eject"
 	},
+	
 
 	"browserslist": {
 		"production": [
