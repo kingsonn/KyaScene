@@ -8,7 +8,7 @@ import {
 } from "@chakra-ui/react";
 // assets
 import peopleImage from "assets/img/people-image.png";
-import logoChakra from "assets/svg/logo-white.svg";
+import logoChakra from "assets/img/party.jpg";
 import BarChart from "components/Charts/BarChart";
 import LineChart from "components/Charts/LineChart";
 // Custom icons
@@ -32,7 +32,12 @@ export default function Dashboard() {
   const iconBoxInside = useColorModeValue("#FF4546", "#FF4546");
 
   return (
-    <Flex flexDirection='column' pt={{ base: "120px", md: "75px" }}>
+    <Flex flexDirection='column' pt={{ base: "70px", md: "75px" }}>
+       <SalesOverview
+          title={"Sales Overview"}
+          percentage={5}
+          chart={<LineChart />}
+        />
       <Flex overflowX='scroll'  scrollBehavior='none' >
         <Flex width='max' position='relative' justify='space-evenly'>
         <MiniStatistics
@@ -85,15 +90,15 @@ export default function Dashboard() {
             />
           }
         />
-        <WorkWithTheRockets
+        {/* <WorkWithTheRockets
           backgroundImage={peopleImage}
           title={"Work with the rockets"}
           description={
             "Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the opportunity first."
           }
-        />
+        /> */}
       </Grid>
-      <Grid
+      {/* <Grid
         templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
         templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}
         gap='24px'
@@ -103,13 +108,9 @@ export default function Dashboard() {
           percentage={23}
           chart={<BarChart />}
         />
-        <SalesOverview
-          title={"Sales Overview"}
-          percentage={5}
-          chart={<LineChart />}
-        />
-      </Grid>
-      <Grid
+       
+      </Grid> */}
+      {/* <Grid
         templateColumns={{ sm: "1fr", md: "1fr 1fr", lg: "2fr 1fr" }}
         templateRows={{ sm: "1fr auto", md: "1fr", lg: "1fr" }}
         gap='24px'>
@@ -124,7 +125,7 @@ export default function Dashboard() {
           amount={30}
           data={timelineData}
         />
-      </Grid>
+      </Grid> */}
     </Flex>
   );
 }

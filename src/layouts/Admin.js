@@ -87,13 +87,13 @@ export default function Dashboard(props) {
 	// Chakra Color Mode
 	return (
 		<ChakraProvider theme={theme} resetCss={false}>
-			<Sidebar
+			{/* <Sidebar
 				routes={routes}
 				logoText={'PURITY UI DASHBOARD'}
 				display='none'
 				sidebarVariant={sidebarVariant}
 				{...rest}
-			/>
+			/> */}
 			<MainPanel
 				w={{
 					base: '100%',
@@ -102,7 +102,7 @@ export default function Dashboard(props) {
 				<Portal>
 					<AdminNavbar
 						onOpen={onOpen}
-						logoText={'PURITY UI DASHBOARD'}
+						logoText={'KYA SCENE?'}
 						brandText={getActiveRoute(routes)}
 						secondary={getActiveNavbar(routes)}
 						fixed={fixed}
@@ -120,10 +120,10 @@ export default function Dashboard(props) {
 					</PanelContent>
 				) : null}
 				<Footer />
-				<Portal>
+				{/* <Portal>
 					<FixedPlugin secondary={getActiveNavbar(routes)} fixed={fixed} onOpen={onOpen} />
-				</Portal>
-				<Configurator
+				</Portal> */}
+				{/* <Configurator
 					secondary={getActiveNavbar(routes)}
 					isOpen={isOpen}
 					onClose={onClose}
@@ -133,7 +133,7 @@ export default function Dashboard(props) {
 					}}
 					onOpaque={() => setSidebarVariant('opaque')}
 					onTransparent={() => setSidebarVariant('transparent')}
-				/>
+				/> */}
 			</MainPanel>
 		</ChakraProvider>
 	);

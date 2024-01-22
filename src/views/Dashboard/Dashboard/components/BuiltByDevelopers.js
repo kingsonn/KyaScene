@@ -10,6 +10,7 @@ import {
 // Custom components
 import Card from "components/Card/Card.js";
 import CardBody from "components/Card/CardBody.js";
+import CardHeader from "components/Card/CardHeader";
 import React from "react";
 // react icons
 import { BsArrowRight } from "react-icons/bs";
@@ -18,24 +19,24 @@ const BuiltByDevelopers = ({ title, name, description, image }) => {
   const textColor = useColorModeValue("gray.700", "#FF4546");
 
   return (
-    <Card minHeight='290.5px' p='1.2rem'>
-      <CardBody w='100%'>
-        <Flex flexDirection={{ sm: "column", lg: "row" }} w='100%'>
-          <Flex
+  
+      
+        <Flex flexDirection={{ sm: "column", lg: "row" }} w='max'>
+          {/* <Flex
             flexDirection='column'
             h='100%'
             lineHeight='1.6'
             width={{ lg: "45%" }}>
             <Text fontSize='sm' color='gray.400' fontWeight='bold'>
-              {title}
+              
             </Text>
             <Text fontSize='lg' color={textColor} fontWeight='bold' pb='.5rem'>
-              {name}
+            Top Scenes Today
             </Text>
-            <Text fontSize='sm' color='gray.400' fontWeight='normal'>
+            {/* <Text fontSize='sm' color='gray.400' fontWeight='normal'>
               {description}
-            </Text>
-            <Spacer />
+            </Text> */}
+            {/* <Spacer />
             <Flex align='center'>
               <Button
                 p='0px'
@@ -65,20 +66,92 @@ const BuiltByDevelopers = ({ title, name, description, image }) => {
                 />
               </Button>
             </Flex>
-          </Flex>
-          <Spacer />
-          <Flex
-            bg='blue.300'
-            align='center'
-            justify='center'
-            borderRadius='15px'
-            width={{ lg: "40%" }}
-            minHeight={{ sm: "250px" }}>
-            {image}
-          </Flex>
-        </Flex>
-      </CardBody>
-    </Card>
+          </Flex>  */}
+          {/* <Spacer /> */}
+          <Text fontFamily='heading' fontSize='2xl' color={textColor} fontWeight='bold' pb='.5rem'>
+            Top Scenes Today🔥
+            </Text>
+         
+          
+        
+      
+           <Flex border='2px solid' mb='10px' bgColor='pink'  w='6rem' h='6rem'>
+              {image}
+            <Flex justifyItems='center' flexDirection='column'>
+            <CardBody mx='20px' >
+              Sun, 4th Feb
+           </CardBody>
+            <Text w='max' ms='20px'>
+              Live Music 
+            </Text>
+            
+           
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           </Flex>
+           </Flex>
+           <Flex border='2px solid' my='10px' bgColor='pink'  w='6rem' h='6rem'>
+              {image}
+            <Flex justifyItems='center' flexDirection='column'>
+            <CardBody mx='20px' >
+              Sun, 4th Feb
+           </CardBody>
+            <Text w='max' ms='20px'>
+              Live Music 
+            </Text>
+            
+           
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           </Flex>
+           </Flex>
+           <Flex border='2px solid' my='10px' bgColor='pink'  w='6rem' h='6rem'>
+              {image}
+            <Flex justifyItems='center' flexDirection='column'>
+            <CardBody mx='20px' >
+              Sun, 4th Feb
+           </CardBody>
+            <Text w='max' ms='20px'>
+              Live Music 
+            </Text>
+            
+           
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           </Flex>
+           </Flex>
+           <Flex border='2px solid' my='10px' bgColor='pink'  w='6rem' h='6rem'>
+              {image}
+            <Flex justifyItems='center' flexDirection='column'>
+            <CardBody mx='20px' >
+              Sun, 4th Feb
+           </CardBody>
+            <Text w='max' ms='20px'>
+              Live Music 
+            </Text>
+            
+           
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           <CardBody mx='20px' >
+              helo
+           </CardBody>
+           </Flex>
+           </Flex>
+           </Flex>
   );
 };
 

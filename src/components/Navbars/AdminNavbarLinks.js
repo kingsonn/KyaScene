@@ -55,10 +55,7 @@ export default function HeaderLinks(props) {
         cursor="pointer"
         bg={inputBg}
         borderRadius="15px"
-        w={{
-          sm: "128px",
-          md: "200px",
-        }}
+        w='100%'
         me={{ sm: "auto", md: "20px" }}
         _focus={{
           borderColor: { mainblue },
@@ -93,7 +90,7 @@ export default function HeaderLinks(props) {
           borderRadius="inherit"
         />
       </InputGroup>
-      <NavLink to="/auth/signin">
+      {/* <NavLink to="/auth/signin">
         <Button
           ms="0px"
           px="0px"
@@ -170,7 +167,7 @@ export default function HeaderLinks(props) {
             </MenuItem>
           </Flex>
         </MenuList>
-      </Menu>
+      </Menu> */}
     </Flex>
   );
 }

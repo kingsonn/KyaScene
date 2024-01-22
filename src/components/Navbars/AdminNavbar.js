@@ -1,11 +1,13 @@
 // Chakra Imports
 import {
   Box,
+  Button,
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
   Flex,
   Link,
+  useColorMode,
   useColorModeValue,
   Text
 } from "@chakra-ui/react";
@@ -13,8 +15,9 @@ import PropTypes from "prop-types";
 import React, { useState } from "react";
 import AdminNavbarLinks from "./AdminNavbarLinks";
 import { ProfileIcon, SettingsIcon } from "components/Icons/Icons";
-
+import { MoonIcon, SunIcon } from '@chakra-ui/icons'
 export default function AdminNavbar(props) {
+  const { colorMode, toggleColorMode } = useColorMode()
   const [scrolled, setScrolled] = useState(false);
   const {
     variant,
@@ -136,12 +139,17 @@ export default function AdminNavbar(props) {
           <span class="material-symbols-outlined">person_pin_circle</span>
           <Text
             color={mainText}
-            
+            fontSize='xl'
           >
            Mumbai
           </Text>
           </Flex>
-          <ProfileIcon color={navbarIcon} w="22px" h="22px" me="0px"  />
+          <Flex>
+          <Button w='25px' h='35px' bgColor='purple.200' onClick={toggleColorMode}>
+                {colorMode === 'light' ? <MoonIcon w='25px' h='35px' color='gray.500'/> : <SunIcon w='25px' h='35px'/>}
+              </Button>
+          <ProfileIcon color={navbarIcon} w="35px" h="35px" me="0px"  />
+          </Flex>
           </Flex>
         </Box>
         <Box ms="auto" w={{ sm: "100%", md: "unset" }}>
