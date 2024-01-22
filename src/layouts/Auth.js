@@ -77,7 +77,7 @@ export default function Pages(props) {
 	const navRef = React.useRef();
 	document.documentElement.dir = 'ltr';
 	return (
-		<ChakraProvider theme={theme} px='0px' resetCss={false} w='100%'>
+		<ChakraProvider theme={theme} resetCss={false} w='100%'>
 			<Box ref={navRef} w='100%'>
 				<Portal containerRef={navRef}>
 					<AuthNavbar secondary={getActiveNavbar(routes)} logoText='KYA SCENE?' />
