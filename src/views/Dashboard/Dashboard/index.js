@@ -78,11 +78,7 @@ export default function Dashboard() {
         />
       </Flex>
       </Flex>
-      <Grid
-        templateColumns={{ md: "1fr", lg: "1.8fr 1.2fr" }}
-        templateRows={{ md: "1fr auto", lg: "1fr" }}
-        my='26px'
-        gap='24px'>
+      
         <BuiltByDevelopers
           title={"Built by Developers"}
           name={"Purity UI Dashboard"}
@@ -104,7 +100,7 @@ export default function Dashboard() {
             "Wealth creation is a revolutionary recent positive-sum game. It is all about who takes the opportunity first."
           }
         /> */}
-      </Grid>
+     
       {/* <Grid
         templateColumns={{ sm: "1fr", lg: "1.3fr 1.7fr" }}
         templateRows={{ sm: "repeat(2, 1fr)", lg: "1fr" }}

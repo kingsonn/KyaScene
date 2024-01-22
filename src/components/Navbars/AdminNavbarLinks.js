@@ -34,7 +34,7 @@ export default function HeaderLinks(props) {
 
   // Chakra Color Mode
   let mainblue = useColorModeValue("blue.300", "blue.300");
-  let inputBg = useColorModeValue("#FF4546", "gray.800");
+  let inputBg = useColorModeValue("purple.200", "gray.800");
   let mainText = useColorModeValue("gray.700", "gray.200");
   let navbarIcon = useColorModeValue("gray.500", "gray.200");
   let searchIcon = useColorModeValue("gray.700", "gray.200");

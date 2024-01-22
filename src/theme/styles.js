@@ -9,7 +9,7 @@ export const globalStyles = {
 	styles: {
 		global: (props) => ({
 			body: {
-				bg: mode('purple.200', 'green')(props),
+				bg: mode('#F8F8F8', 'purple.900')(props),
 				fontFamily: "'Roboto', sans-serif"
 			},
 			html: {

@@ -20,7 +20,7 @@ const MiniStatistics = ({ title, font,me,mx, percentage, icon }) => {
   const textColor = useColorModeValue("gray.700", "white");
 
   return (
-    <Card bgColor='pink' minH='83px' w='max' mx={mx} me={me}  >
+    <Card bgColor='purple.300' boxShadow={'lg'} minH='83px' w='max' my='20px' mx={mx} me={me}  >
       <CardBody>
         <Flex fontFamily={font} flexDirection='row' align='center' justify='center' w='max'>
           <Text fontWeight='bold' letterSpacing='wider' fontSize='4xl'> 
