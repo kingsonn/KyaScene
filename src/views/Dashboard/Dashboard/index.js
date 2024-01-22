@@ -69,6 +69,13 @@ export default function Dashboard() {
           percentage={8}
           icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
         />
+        <MiniStatistics
+          title={"The Romanctic"}
+          font={"Rouge Script"}
+          mx='10px'
+          percentage={8}
+          icon={<CartIcon h={"24px"} w={"24px"} color={iconBoxInside} />}
+        />
       </Flex>
       </Flex>
       <Grid
